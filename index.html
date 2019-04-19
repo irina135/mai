@@ -21,7 +21,6 @@
             e()
             s()
             g()
-            k()
             l();
         }
         function b() {
@@ -37,7 +36,9 @@
             $(".main_img2").animate({width:"289px"},1500, function () {
                 $(".main_img2").animate({opacity:"0"},1400, function () {
                     $(".main_img5").animate({opacity:"1"},3400, function () {
-                        $(".main_img5").animate({opacity:"0"},2000)
+                        $(".main_img5").animate({opacity:"0"},2000, function () {
+                            $(".main_img_text").animate({opacity:"1"},2000)
+                        })
                     })
                 })
             })
@@ -77,9 +78,6 @@
                     })
                 })
             })
-        }
-        function k() {
-            $(".main_img_text").animate({opacity:"1"},20000)
         }
         function l() {
             $(".main-img_circle").animate({opacity:"1"},1500, function () {
